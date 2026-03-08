@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon do meu portifolio.png" type="image/x-icon">
+  <title>Meu Portifólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .card {
+      background-color: #1e293b;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+    }
+    nav a:hover { color: #38bdf8; }
+    #particles-js { position: fixed; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6">
+  <div id="particles-js"></div>
+  <nav class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 p-4 flex justify-center gap-6 z-50 rounded-b-lg">
+    <a href="#inicio" class="text-slate-300 font-semibold hover:text-sky-400">Início</a>
+    <a href="#sobre" class="text-slate-300 font-semibold hover:text-sky-400">Sobre Mim</a>
+    <a href="#formacao" class="text-slate-300 font-semibold hover:text-sky-400">Formação e Cursos</a>
+    <a href="#habilidades" class="text-slate-300 font-semibold hover:text-sky-400">Habilidades</a>
+    <a href="#trabalhos" class="text-slate-300 font-semibold hover:text-sky-400">Meus Trabalhos</a>
+    <a href="#contato" class="text-slate-300 font-semibold hover:text-sky-400">Contato</a>
+  </nav>
+
+  <header id="inicio" class="text-center my-24 flex flex-col items-center" data-aos="fade-down">
+    <h1 class="text-4xl font-bold gradient-text mb-2">Olá, eu sou Eduardo Barbosa Bezzuoli</h1>
+    <p class="text-lg text-slate-300">Conheça um pouco sobre mim e o que estou construindo na área de tecnologia.</p>
+  </header>
+
+  <main class="max-w-4xl w-full space-y-12">
+
+    <section id="sobre" data-aos="fade-right">
+      <h2 class="text-2xl font-semibold text-sky-400 mb-4">👋 Sobre Mim</h2>
+      <div class="card">
+        <p class="text-slate-300 leading-relaxed">
+          Sou estudante de Análise e Desenvolvimento de Sistemas e tenho grande interesse pelo universo da tecnologia.
+        </p>
+        <p class="text-slate-300 leading-relaxed mt-4">
+          Gosto de aprender novas ferramentas, desenvolver projetos e colocar em prática os conhecimentos que venho adquirindo durante meus estudos, buscando evoluir constantemente na área de tecnologia.
+        </p>
+      </div>
+    </section>
+
+    <section id="formacao" data-aos="fade-left">
+      <h2 class="text-2xl font-semibold text-sky-400 mb-4">📘 Formação e Cursos</h2>
+      <div class="space-y-4">
+        <div class="card">
+          <h3 class="text-lg font-semibold text-sky-300 mb-2">🎓 Formação</h3>
+          <p class="text-slate-300">Universidade Anhanguera — Análise e Desenvolvimento de Sistemas</p>
+          <p class="text-slate-300 mt-2">Início: 02/2025 - Previsão de Término: 06/2027</p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-sky-300 mb-2">💼 Cursos de Qualificação</h3>
+          <ul class="text-slate-300 list-disc list-inside space-y-2">
+            <li>Língua Inglesa: Kultivi<br>Carga horária: 120 horas - Cursando</li>
+            <li>Lógica de Programação: Curso em Vídeo<br>Carga horária: 40 horas</li>
+            <li>HTML5 e CSS3 / 5 Modos: Curso em Vídeo<br>Carga horária: 200 horas - Cursando</li>
+            <li>Git e GitHub: Curso em Vídeo<br>Carga horária: 20 horas - Cursando</li>
+            <li>Informática: American Tower<br>Carga horária: 60 horas</li>
+            <li>Desenvolvimento de Sistemas: EasyComp<br>Carga horária: 192 horas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" data-aos="fade-up">
+      <h2 class="text-2xl font-semibold text-sky-400 mb-4">💻 Habilidades</h2>
+      <div class="flex flex-wrap gap-4">
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Lógica de Programação</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Segurança Digital</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Hardware e Software</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Gestão de Arquivos</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Pacote Office</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Front-End</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">HTML5</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">CSS3</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">JavaScript</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">Tailwind CSS</span>
+        <span class="bg-slate-800 px-4 py-2 rounded-full hover:bg-sky-600 transition">React</span>
+      </div>
+    </section>
+
+    <section id="trabalhos" data-aos="fade-right">
+      <h2 class="text-2xl font-semibold text-sky-400 mb-4">📚 Trabalho academico mais destacado</h2>
+
+      <div class="card mb-6">
+        <h3 class="text-lg font-semibold text-sky-300 mb-2">🥇 SISTEMA DE GESTÃO CLÍNICA VIDA+</h3>
+        <p class="text-slate-300 mb-2">Sistema desenvolvido para gerenciamento de pacientes em uma clínica médica, aplicando conceitos de Python, lógica de programação, UML e metodologia Scrum.</p>
+        <a href="https://drive.google.com/file/d/1OkfJnJntK6n8FPKvPJkTK5LvsyqDl0vM/view?usp=sharing" target="_blank" class="text-sky-400 hover:underline">📎 Acessar trabalho no Google Drive</a>
+      </div>
+    </section>
+
+    <section id="contato" data-aos="fade-up">
+      <h2 class="text-2xl font-semibold text-sky-400 mb-4">📫 Contato e Redes Sociais</h2>
+      <div class="card space-y-2">
+        <p class="text-slate-300">📞 WhatsApp: <a href="https://wa.me/5511940223952" target="_blank" class="text-sky-400 hover:underline">(11) 94022-3952</a></p>
+        <p class="text-slate-300">📧 Email: <a href="mailto:bezzuoli07@gmail.com" class="text-sky-400 hover:underline">bezzuoli07@gmail.com</a></p>
+        <p class="text-slate-300">💼 LinkedIn: <a href="https://www.linkedin.com/in/bezzuoli" target="_blank" class="text-sky-400 hover:underline">www.linkedin.com/in/bezzuoli</a></p>
+        <p class="text-slate-300">💻 GitHub: <a href="https://github.com/Bezzuoli07" target="_blank" class="text-sky-400 hover:underline">github.com/Bezzuoli07</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 text-slate-500 text-sm text-center">© 2025 Eduardo Barbosa Bezzuoli — Portfólio Profissional</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#38bdf8" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 120, color: "#38bdf8", opacity: 0.2, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
